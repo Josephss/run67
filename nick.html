@@ -1,4 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <p>Hello World!</p>
+<title>Run65 CCE Model</title>
+
+<h1><center>UMN K100 Run66 - 60 keV Peak Parameters</center></h1>
+<h3><center>Nick Mast, 13 April 2018</center></h3>
+
+<hr>
+<h2>I. Introduction</h2>
+
+  <p>This note presents the results of an analysis of the 60 keV calibration line behavior. This run in particular had a rich set of time dependent behaviors. Our initial attempts to invent a plausible physical model for this behavior have not been successful in reproducing all of the observations. Thus, the analysis presented here attempts to quantify the observed behavior in an empirical way. This will help lend insight into likely physical models.
+  </p>
+
+<hr>
+<h2>II. Fit Functions</h2>
+  <p>We observed that, above ~4 V bias, the 60keV calibration peak initially rose linearly for a few minutes, then quickly transitioned to an ~exponential fall off over 10s of minutes. The empirical fit functions then were the following:</p>
+  <ul>
+    <li>Initial slope: b0+m*time</li>
+    <li>Falling tail: b1+A*exp(-t/T)</li>
+  </ul>
+  
 </html>
