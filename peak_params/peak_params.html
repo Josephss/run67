@@ -13,7 +13,8 @@
 
 <hr>
 <h2>II. Fit Functions</h2>
-  <p>We observed that, above ~4 V bias, the 60keV calibration peak in Q4 initially rose linearly for a few minutes, then quickly transitioned to an ~exponential fall off over 10s of minutes. This can be seen in Fig. 1 below.</p>
+  <p>We observed that, above ~4 V bias, the 60keV calibration peak in Q4 initially rose linearly for a few minutes, then quickly transitioned to an ~exponential fall off over 10s of minutes. This can be seen in Fig. 1 below.
+  </p>
   
   <table border=1 align="center">
     <tr><th colspan=2>Figure 1: Q4 60keV peak vs time</th></tr>
@@ -26,16 +27,25 @@
     <li>Falling tail: b1+A*exp(-t/T)</li>
   </ul>
   
-  <p>The results of these fits are shown in the following plots.</p>
+<hr>
+<h2>III. Fit Results</h2>
+  <p>The above functions were used to fit the Q4 60keV calibration lines for a set of Run 67 data. The data series used were each after a standard flash and cooldown period. Most of the data was taken with only the internal 241Am sources present. These are the blue points in the figures below. A few additional series were taken with an external 133Ba source placed near the cryostat. These are the orange points below. All fits were performed using only the first 30 min of data after the bias was applied.
+  </p>
   
   <table border=1 align="center">
     <tr><th colspan=2>Figure 2: Q4 60keV initial slope vs. bias</th></tr>
     <tr><td><a href="javascript:location.href='images/Q4_slope_v_bias.png';"><img src="images/Q4_slope_v_bias.png" style="width:700px;"></a></td></tr>
  </table>
   
+  <p>Figure 2 above shows that the initial peak slope grows exponentially with applied bias voltage. With the 133Ba source present, the overall amplitude of the exponential changes, but the slope is similar. i.e. with the source present, the slope at a given bias is higher, but the <i>change</i> in slope with bias is roughly constant.
+  </p>
+  
     <table border=1 align="center">
     <tr><th colspan=2>Figure 3: Q4 60keV fall time vs. bias</th></tr>
     <tr><td><a href="javascript:location.href='images/Q4_fall_time_v_bias.png';"><img src="images/Q4_fall_time_v_bias.png" style="width:700px;"></a></td></tr>
  </table>
+  
+  <p>Figure 3 above shows the distribution of fitted Q4 60keV peak fall times as a function of bias voltage. Again, these fall times seem to be exponentially dependent on bias voltage. The scatter at low biases is due to the difficulty in fitting the exponential function to rather flat tails. The different points at each bias are from measurements of separate series, but generally reflect the uncertainty in fitting even a single such series, not variabilty of the fall times themselves.
+  </p>
   
 </html>
