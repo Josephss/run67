@@ -4,51 +4,54 @@ Observation: at a given bias voltage, the rate at which the CCE grows just after
 <p>
 Suppose that the targets are generated at a rate proportional to the rate at which charge carriers are created, R_ccc. If R_ccc = R_ion then it would not explain why a 1.14 increase in R_ion produces a much greater increase in dN_iit/dt. But impact ionization amplifies the charge carrier production rate beyond the ionization rate. Suppose 
 </p>
-<p>
-1)	dN_iit/dt = k*R_ccc
-</p>
-<p>
-2)	R_ccc = R_ion*(1+p*Niit)
-</p>
-<p>
-3)	N_iit = 0 at t = 0
-</p>
+<ol>
+<li>dN_iit/dt = k*R_ccc
+<li>R_ccc = R_ion*(1+p*Niit)
+<li>N_iit = 0 at t = 0
+</ol>
 <p>
 Then
 </p>
-<p>
-4)	N_iit = 1/p * (exp(p*k*R_ion*t) – 1)
-</p>
-<p>
-5)	dN_iit/dt = k*R_ion*exp(p*k*R_ion*t)
-</p>
+<ol start="4">
+<li>N_iit = 1/p * (exp(p*k*R_ion*t) – 1)
+<li>dN_iit/dt = k*R_ion*exp(p*k*R_ion*t)
+</ol>
 <p>
 In the above, k is essentially a probability that a drifting charge carrier will produce an impact ionization target. p is a probability that a charge carrier will impact with a target and produce another charge carrier. 
 </p>
 <p>
 Let’s now use the observation that a 1.14 increase in ionization rate produces a 2.4 increase in the initial growth rate of targets. Thus
 </p>
-<p>
-6)	2.4 = 1.14*exp(p*k*delR_ion*t_meas)
+<ol start="6">
+<li>2.4 = 1.14*exp(p*k*delR_ion*t_meas)
+</ol>
 </p>
 <p>
 Here delR_ion is the difference between the high and low ionization rates, and t_meas is the approximate amount of time over which the CCE growth rate was measured. The lower ionization rate is on the order of 30 Hz times 300 keV divided by 3 eV, or 3e6 Hz. delR_ion is about 0.14 times this, 4e5 Hz. t_meas is around 5 minutes. So delR_ion*t_meas is around 1e8.  This gives
 </p>
-<p>
-7)	p*k =  0.8 / (delR_ion*t_meas) = 1e-8
-</p>
-<p>
-8)	sqrt(p*k) = 1e-4
-</p>
+<ol start="7">
+<li>p*k =  0.8 / (delR_ion*t_meas) = 1e-8
+<li>sqrt(p*k) = 1e-4
+</ol>
 <p>
 suppose p=k, and concentration N of impurities that can be activated into impact ionization targets.
 </p>
-<p>
-9)	p = sigma*N*L
-</p>
+<ol start="9">
+<li>p = sigma*N*L
+</ol>
 <p>
 given the van der waals radius of Ge let’s suppose sigma < 1e-15 cm2 
 </p>
+<ol start="10">
+<li>N = p/sigma/L > 1e-4/(1e-15 cm2)/(3cm) = 3e10 cm-3
+</ol>
 <p>
-10)	N = p/sigma/L > 1e-4/(1e-15 cm2)/(3cm) = 3e10 cm-3
+This is a plausible order-of-magnitude for an impurity concentration.
 </p>
+<p>
+Some model difficulties:
+</p>
+<ul>
+<li>When a carrier produces an impact ionization target, is it trapped? If so wouldn't this effectively quench the rate of charge carrier creation? Maybe this isn't a difficulty - maybe it's just an adjustment on k
+<li>When a carrier impacts a target and an impact ionization occurs, does this "deactivate" the target? If so then we need to add a negative term to the impact target growth rate.  
+</ul>
