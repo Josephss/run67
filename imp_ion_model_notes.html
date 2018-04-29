@@ -1,0 +1,54 @@
+<p>
+Observation: at a given bias voltage, the rate at which the CCE grows just after biasing is strongly dependent on the overall event rate, i.e. on the ionization rate, R_ion (the rate at which charge carriers are produced by ionizing events). Assume that the CCE growth rate is proportional to the impact ionization target population growth rate, dN_iit/dt. An increase in ionization rate by a factor of about 1.14 (with Ba versus without) results in an increase in CCE growth rate by a factor of about 2.4 (averaged over 6V and 8V data). 
+</p>
+<p>
+Suppose that the targets are generated at a rate proportional to the rate at which charge carriers are created, R_ccc. If R_ccc = R_ion then it would not explain why a 1.14 increase in R_ion produces a much greater increase in dN_iit/dt. But impact ionization amplifies the charge carrier production rate beyond the ionization rate. Suppose 
+</p>
+<p>
+1)	dN_iit/dt = k*R_ccc
+</p>
+<p>
+2)	R_ccc = R_ion*(1+p*Niit)
+</p>
+<p>
+3)	N_iit = 0 at t = 0
+</p>
+<p>
+Then
+</p>
+<p>
+4)	N_iit = 1/p * (exp(p*k*R_ion*t) – 1)
+</p>
+<p>
+5)	dN_iit/dt = k*R_ion*exp(p*k*R_ion*t)
+</p>
+<p>
+In the above, k is essentially a probability that a drifting charge carrier will produce an impact ionization target. p is a probability that a charge carrier will impact with a target and produce another charge carrier. 
+</p>
+<p>
+Let’s now use the observation that a 1.14 increase in ionization rate produces a 2.4 increase in the initial growth rate of targets. Thus
+</p>
+<p>
+6)	2.4 = 1.14*exp(p*k*delR_ion*t_meas)
+</p>
+<p>
+Here delR_ion is the difference between the high and low ionization rates, and t_meas is the approximate amount of time over which the CCE growth rate was measured. The lower ionization rate is on the order of 30 Hz times 300 keV divided by 3 eV, or 3e6 Hz. delR_ion is about 0.14 times this, 4e5 Hz. t_meas is around 5 minutes. So delR_ion*t_meas is around 1e8.  This gives
+</p>
+<p>
+7)	p*k =  0.8 / (delR_ion*t_meas) = 1e-8
+</p>
+<p>
+8)	sqrt(p*k) = 1e-4
+</p>
+<p>
+suppose p=k, and concentration N of impurities that can be activated into impact ionization targets.
+</p>
+<p>
+9)	p = sigma*N*L
+</p>
+<p>
+given the van der waals radius of Ge let’s suppose sigma < 1e-15 cm2 
+</p>
+<p>
+10)	N = p/sigma/L > 1e-4/(1e-15 cm2)/(3cm) = 3e10 cm-3
+</p>
