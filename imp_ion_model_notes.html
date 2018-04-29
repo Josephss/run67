@@ -1,5 +1,5 @@
 <p>
-Observation: at a given bias voltage, the rate at which the CCE grows just after biasing is strongly dependent on the overall event rate, i.e. on the ionization rate, R_ion (the rate at which charge carriers are produced by ionizing events). Assume that the CCE growth rate is proportional to the impact ionization target population growth rate, dN_iit/dt. An increase in ionization rate by a factor of about 1.14 (with Ba versus without) results in an increase in CCE growth rate by a factor of about 2.4 (averaged over 6V and 8V data). 
+Observation: at a given bias voltage, the rate at which the CCE grows just after biasing is strongly dependent on the overall event rate, i.e. on the ionization rate, R_ion (the rate at which charge carriers are produced by ionizing events). Assume that the CCE growth rate is proportional to the impact ionization target population growth rate, dN_iit/dt. An increase in ionization rate by a factor of about 1.14 (with Ba versus without) results in an increase in CCE growth rate by a factor of about 2.4 (averaged over 6V and 8V data, see <a href="peak_params.html">Peak Parameters note</a>). 
 </p>
 <p>
 Suppose that the targets are generated at a rate proportional to the rate at which charge carriers are created, R_ccc. If R_ccc = R_ion then it would not explain why a 1.14 increase in R_ion produces a much greater increase in dN_iit/dt. But impact ionization amplifies the charge carrier production rate beyond the ionization rate. Suppose 
@@ -54,4 +54,14 @@ Some model difficulties:
 <ul>
 <li>When a carrier produces an impact ionization target, is it trapped? If so wouldn't this effectively quench the rate of charge carrier creation? Maybe this isn't a difficulty - maybe it's just an adjustment on k
 <li>When a carrier impacts a target and an impact ionization occurs, does this "deactivate" the target? If so then we need to add a negative term to the impact target growth rate.  
+</ul>
+<p>
+  plans for continuing this model
+</p>
+<ul>
+  <li>check whether the exponential growth in this model can fit the roughly linear CCE growth rate seen in data
+  <li>growth rate depends (exponentially) on bias. This suggests p or k or both increase with bias. At low enough bias, p*k is small enough that no impact ionization is seen.
+  <li>also need to explain why CCE turns around after a few minutes then falls again. My current thinking is that as space charge develops over time the effective bias is reduced and therefore p*k falls and impact ionization happens less and less. (If activated targets don't deactivate when impact ionization occurs, then it must be p that falls as effective bias falls.)
+  <li>since the CCE growth only occurs at positive bias, could be that only holes are producing the impact ionization. But in this model the targets could be activated by either carrier, or both of them. 
+  <li>could this model work with the notion that a target is produced by a hole getting trapped on a particular impurity type, and that impact ionization occurs when a hole hits the trapped hole, releasing it? If so then it would have to be the case that the impact ionization deactivates the target, which might break the model described above. 
 </ul>
