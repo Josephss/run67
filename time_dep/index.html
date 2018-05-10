@@ -1,1 +1,52 @@
 
+<html>
+  
+  <script LANGUAGE = "JavaScript">
+    biaschoice = "p7"
+    channelchoice = "4"
+    sourcechoice = "Am"
+    versionchoice = "v0"
+    function setfig1(){
+       document["fig1"].src='r67_timedep_'+biaschoice+'_'+channelchoice+'_'+sourcechoice+'_'+versionchoice+'.png';
+    }
+    function updatebias(i){
+      biaschoice=i;
+      setfig1();
+    }
+    function updatechannel(i){
+      channelchoice=i;
+      setfig1();
+    }
+    function updatesource(i){
+      sourcechoice=i;
+      setfig1();
+    }
+    function updateversion(i){
+      versionchoice=i;
+      setfig1();
+    }
+</script>
+  
+<table><tr>
+<td><img src="r67_timedep_p9V_q4_Am_v0.png" name="fig1"></td>
+<td>
+Select bias: <br>
+<a href="javascript:updatebias('p7v');">+7V</a> <br>
+</td>
+<td>
+Select channel: <br>
+<a href="javascript:updatechannel('q1');">q1</a> <br>
+<a href="javascript:updatechannel('q2');">q2</a> <br>
+<a href="javascript:updatechannel('q3');">q3</a> <br>
+<a href="javascript:updatechannel('q4');">q4</a> <br>
+</td>
+<td><table><tr><th>Figure 14</th></tr><tr><td>
+Single-channel phonon collection efficiency for events in the 60 keV 
+peak. Selecting a channel shows how the individual channels' 
+energies vary with the HV setting. Selecting an HV data set shows 
+how the energy is distributed among channels at a given HV setting.
+</td></tr></table></td>
+</tr></table>  
+  
+  
+</html>
