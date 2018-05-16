@@ -1,1 +1,110 @@
 
+<html>
+  
+  <script LANGUAGE = "JavaScript">
+    biaschoice = "p7V"
+    channelchoice = "q4"
+    sourcechoice = "Am"
+    versionchoice = "v0"
+    function setfig1(){
+       document["fig1"].src='r67_timedep_'+biaschoice+'_'+channelchoice+'_'+sourcechoice+'_'+versionchoice+'.png';
+    }
+    function updatebias(i){
+      biaschoice=i;
+      setfig1();
+    }
+    function updatechannel(i){
+      channelchoice=i;
+      setfig1();
+    }
+    function updatesource(i){
+      sourcechoice=i;
+      setfig1();
+    }
+    function updateversion(i){
+      versionchoice=i;
+      setfig1();
+    }
+</script>
+
+<table><tr>
+<td>
+Am-only data <br> Select bias: <br>
+<a href="javascript:updatebias('n9V');javascript:updatesource('Am');">-9V</a> <br>
+<a href="javascript:updatebias('n8V');javascript:updatesource('Am');">-8V</a> <br>
+<a href="javascript:updatebias('n6V');javascript:updatesource('Am');">-6V</a> <br>
+<a href="javascript:updatebias('n3o5V');javascript:updatesource('Am');">-3.5V</a> <br>
+<a href="javascript:updatebias('n0o5V');javascript:updatesource('Am');">-0.5V</a> <br>
+<a href="javascript:updatebias('p0o5V');javascript:updatesource('Am');">+0.5V</a> <br>
+<a href="javascript:updatebias('p1V');javascript:updatesource('Am');">+1V</a> <br>
+<a href="javascript:updatebias('p1o5V');javascript:updatesource('Am');">+1.5V</a> <br>
+<a href="javascript:updatebias('p2V');javascript:updatesource('Am');">+2V</a> <br>
+<a href="javascript:updatebias('p2o5V');javascript:updatesource('Am');">+2.5V</a> <br>
+<a href="javascript:updatebias('p3V');javascript:updatesource('Am');">+3V</a> <br>
+<a href="javascript:updatebias('p3o5V');javascript:updatesource('Am');">+3.5V</a> <br>
+<a href="javascript:updatebias('p4V');javascript:updatesource('Am');">+4V</a> <br>
+<a href="javascript:updatebias('p4o5V');javascript:updatesource('Am');">+4.5V</a> <br>
+<a href="javascript:updatebias('p5V');javascript:updatesource('Am');">+5V</a> <br>
+<a href="javascript:updatebias('p5o5V');javascript:updatesource('Am');">+5.5V</a> <br>
+<a href="javascript:updatebias('p6V');javascript:updatesource('Am');">+6V</a> <br>
+<a href="javascript:updatebias('p7V');javascript:updatesource('Am');">+7V</a> <br>
+<a href="javascript:updatebias('p8V');javascript:updatesource('Am');">+8V</a> <br>
+<a href="javascript:updatebias('p9V');javascript:updatesource('Am');">+9V</a> <br>
+<a href="javascript:updatebias('p10V');javascript:updatesource('Am');">+10V</a> <br>
+<a href="javascript:updatebias('p11V');javascript:updatesource('Am');">+11V</a> <br>
+<a href="javascript:updatebias('p12V');javascript:updatesource('Am');">+12V</a> <br>
+</td>
+<td>
+Am+Ba data <br> Select bias: <br>
+-9V <br>
+<a href="javascript:updatebias('n8V');javascript:updatesource('Ba');">-8V</a> <br>
+<a href="javascript:updatebias('n6V');javascript:updatesource('Ba');">-6V</a> <br>
+-3.5V <br>
+-0.5V <br>
++0.5V <br>
++1V <br>
++1.5V <br>
++2V <br>
++2.5V <br>
++3V <br>
++3.5V <br>
++4V <br>
++4.5V <br>
++5V <br>
++5.5V <br>
+<a href="javascript:updatebias('p6V');javascript:updatesource('Ba');">+6V</a> <br>
++7V <br>
+<a href="javascript:updatebias('p8V');javascript:updatesource('Ba');">+8V</a> <br>
++9V <br>
++10V <br>
++11 <br>
++12V <br>
+</td>
+<td>
+Select channel: <br>
+<a href="javascript:updatechannel('q1');">q1</a> <br>
+<a href="javascript:updatechannel('q2');">q2</a> <br>
+<a href="javascript:updatechannel('q3');">q3</a> <br>
+<a href="javascript:updatechannel('q4');">q4</a> <br>
+<br><br>
+</td><td>
+Select version: <br>
+<a href="javascript:updateversion('v0');">0</a> <br>
+<a href="javascript:updateversion('v1');">1</a> <br>
+<a href="javascript:updateversion('v2');">2</a> <br>
+<a href="javascript:updateversion('v3');">3</a> <br>
+<a href="javascript:updateversion('v4');">4</a> <br>
+<a href="javascript:updateversion('v5');">5</a> <br>
+<a href="javascript:updateversion('v6');">6</a> <br>
+<a href="javascript:updateversion('v7');">7</a> <br>
+<a href="javascript:updateversion('v8');">8</a> <br>
+<a href="javascript:updateversion('v9');">9</a> <br>
+<a href="javascript:updateversion('v10');">10</a> <br>
+<a href="javascript:updateversion('v11');">11</a> <br>
+<a href="javascript:updateversion('v12');">12</a> <br>
+</td>
+<td><img src="r67_timedep_p9V_q4_Am_v0.png" name="fig1"></td>
+</tr></table>  
+  
+  
+</html>
