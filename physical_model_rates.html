@@ -35,7 +35,7 @@
 <ol start="5">
   <li>\( R_h = R_+ \)</li>
   <li>\( R_e = R_- - R_{eD} + R_{hD} \)</li>
-  <li>\( \dot{N}_{D-} = R_{eD} - R_{hD} \)</li>  
+  <li>\( \dot{N}_{D-} = R_{eD} \)</li>  
 </ol>
 <p> 
   The rates of interactions with donor states can be written as follows:  
@@ -52,14 +52,14 @@
   Combining these yields 
 </p>
 <ol start="10">
-  <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_- - \frac{p}{1+k}R_+N_{D-}  \)</li>
+  <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_- - \frac{pk}{1+k}R_+N_{D-}  \)</li>
 </ol>
 <p>
   If we assume that the population of negative donors is initially zero, we find
 </p>
 <ol start="11">
-  <li>\( N_{D-} = \frac{k}{p}\frac{R_-}{R_+}(1 - e^{-\frac{p}{1+k}R_+t})  \)</li>
-  <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_-e^{-\frac{p}{1+k}R_+t}  \)</li>
+  <li>\( N_{D-} = \frac{1}{p}\frac{R_-}{R_+}(1 - e^{-\frac{pk}{1+k}R_+t})  \)</li>
+  <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_-e^{-\frac{pk}{1+k}R_+t}  \)</li>
 </ol>
 <p>
   How well does this model fit the observations?
@@ -93,7 +93,7 @@
   <li>\( \dot{G} = \frac{\sigma_{hD}}{A}\dot{N}_{D-}  \)</li>
 </ol>
 <p> 
-  Taking Nick's empirical formula from <a href="/peak_params/peak_params.html"> Note 1</a> for the Am-only case, we can convert
+  Taking Nick's empirical formula from <a href="peak_params/peak_params.html"> Note 1</a> for the Am-only case, we can convert
   from keV/min to gain/s (for a 60 keV base energy) yielding 
 </p>
 <ol start="17">
