@@ -20,7 +20,7 @@
 </ul>
 <p>
   We assume that the dominant interactions between charge carriers and impurities are those identified in 
-  <a href="physical_model/physical_model.html"> Note 3 </a>:
+  <a href="physical_model/physical_model.html">Note 3</a>:
   electrons trapping on neutral donors, and holes impacting with overcharged donors to release an electron 
   and neutralize the donor.
 </p>
@@ -29,12 +29,14 @@
   <li>\( h^+ + D^- \rightarrow h^+ + e^- + D^0 \)</li>
 </ol>
 <p>
-  As pointed out in <a href="physical_model/physical_model.html"> Note 3 </a>, this explains why only hole events
-  produce the observed impact ionization.
+  As pointed out in <a href="physical_model/physical_model.html"> Note 3</a>, this explains why only hole events
+  produce the observed impact ionization. The qualitative explanation for the growth of the charge collection efficiency
+  is that drifting electrons produce a growing population of charged donors which serve as impact ionization targets 
+  for holes. Now we'll try to see if this model can match quantitative observations.
 </p>
 <p> 
-  Now add the process of ionization from ionizing radiation. Rather than having one ionization producing an electron/hole pair,
-  I'll separate it into two processes, one producing holes and one producing electrons. The reason is because we are interested
+  We add the process of ionization from ionizing radiation. Rather than having one ionization producing an electron/hole pair,
+  let's separate it into two processes, one producing holes and one producing electrons. The reason is because we are interested
   in carriers that drift through the detector bulk, but with the Am source there is an asymmetry in the number of carriers 
   produced of each type that drift through the detector bulk.
 </p>
@@ -77,20 +79,30 @@
   <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_-e^{-\frac{k}{1+k}R_+t}  \)</li>
 </ol>
 <p>
-  How well does this model fit the observations?
+  We can pause here to compare the equations above to some observed behavior. We expect the enhanced charge collection 
+  efficiency to be proportional to the population of overcharged donors. Equation 11 says this should rise and
+  exponentially approach some saturation level. We observe a linear rise before (apparently) other effects quench the 
+  effect. It could be we are only seeing the early approximately-linear portion. 
 </p>
-<ul>
-  <li> As pointed out by Nick, this model correctly predicts that only holes produce the impact ionization effect, as
-    evidenced by the time-dependent behavior only being present in data with positive bias. 
-  <li> The model predicts that the rate of impact ionization will grow and settle exponentially to a saturation level.
-    We observe initial linear growth; perhaps we don't see the phenomenon long enough to see the relaxation.
-  <li> In <a href="imp_ion_model_notes.html"> Note 2</a> I tried to show how a total increase in ionization rate of 1.14 (with
-    the Ba source present) could produce an increase in the growth rate of the impact ionization of 2.4. In this model the 
-    growth rate should be proportional to the ionization rate, but specifically to the rate of production of electrons. Under 
-    positive bias, events from the four Am sources will contribute only to the hole flux through the detector; electrons are
-    immediately collected and don't flow through the bulk of the crystal. If the rate from Ba is 1.4X the rate from background,
-    and if the rate from the four Am sources is 9X the rate from background, this would match the observed ratios. 
-</ul>
+<p> 
+  Equation 12 says that the growth rate of the charge collection efficiency should be proportional to the rate at 
+  which electrons are produced by ionizing events. Form <a href="/peak_params/peak_params.html">Note 1</a> we can estimate
+  that at any bias the CCE growth rate is about 2.4 times greater when the Ba source is present than when it is not. From 
+  energy spectra we estimate that the overall ionization rate with the Ba source present is about 1.14 times greater than
+  when it is not. Initially it seems surprising that such a small increase in ionization rate has such a large effect in CCE
+  growth rate. However in this model the position of ionizing events in the detector is relevant - we are not interested
+  in the production of charge carriers that are immediately collected, as is the case for electrons produced by 60keV events
+  from the Am source, which are near-suface events. We are interested in carriers that drift significant distances and thus
+  can contribute to the trapping or impact processes in the bulk of the detector. 
+</p>
+<p>
+  Suppose that the ionization rate from the four Am sources is 9 times the background rate, and that the rate from the Ba
+  source is 1.4 times the background rate. (These are plausible values.)
+  Then the total ionization rate would be 1.14 times greater with the Ba source 
+  present, as calculated from the spectra. But the Am sources do not contribute to \(R_-\), because this rate does not 
+  include immediately-collected electrons. So \(R_-\) would be 2.4 times greater with the Ba source present. This part of 
+  the model works.  
+</p>
 <p>
   Continuing the model, we can write an expression for the gain produced by impact ionization: 
 </p>
