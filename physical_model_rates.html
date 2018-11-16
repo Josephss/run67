@@ -22,11 +22,11 @@
   We assume that the dominant interactions between charge carriers and impurities are those identified in 
   <a href="physical_model/physical_model.html"> Note 3 </a>:
   electrons trapping on neutral donors, and holes impacting with overcharged donors to release an electron 
-  (without changing the donor charge).
+  and neutralize the donor.
 </p>
 <ol>
   <li>\( e^- + D^0 \rightarrow D^- \)</li>
-  <li>\( h^+ + D^- \rightarrow h^+ + e^- + D^- \)</li>
+  <li>\( h^+ + D^- \rightarrow h^+ + e^- + D^0 \)</li>
 </ol>
 <p>
   As pointed out in <a href="physical_model/physical_model.html"> Note 3 </a>, this explains why only hole events
@@ -50,7 +50,7 @@
 <ol start="5">
   <li>\( R_h = R_+ \)</li>
   <li>\( R_e = R_- - R_{eD} + R_{hD} \)</li>
-  <li>\( \dot{N}_{D-} = R_{eD} \)</li>  
+  <li>\( \dot{N}_{D-} = R_{eD} - R_{hD} \)</li>  
 </ol>
 <p> 
   The rates of interactions with donor states can be written as follows:  
@@ -67,14 +67,14 @@
   Combining these yields 
 </p>
 <ol start="10">
-  <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_- - \frac{pk}{1+k}R_+N_{D-}  \)</li>
+  <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_- - \frac{k}{1+k}R_+N_{D-}  \)</li>
 </ol>
 <p>
   If we assume that the population of negative donors is initially zero, we find
 </p>
 <ol start="11">
-  <li>\( N_{D-} = \frac{1}{p}\frac{R_-}{R_+}(1 - e^{-\frac{pk}{1+k}R_+t})  \)</li>
-  <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_-e^{-\frac{pk}{1+k}R_+t}  \)</li>
+  <li>\( N_{D-} = \frac{k}{p}\frac{R_-}{R_+}(1 - e^{-\frac{k}{1+k}R_+t})  \)</li>
+  <li>\( \dot{N}_{D-} = \frac{k}{1+k}R_-e^{-\frac{k}{1+k}R_+t}  \)</li>
 </ol>
 <p>
   How well does this model fit the observations?
