@@ -8,12 +8,19 @@
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
  \(  \)
 <p>
-  This note is a further attempt to model the time-dependent impact ionization seen in Run 67. We attempt to derive rates
-  similar to <a href="imp_ion_model_notes.html"> Note 2</a> informed by Nick's model from 
-  <a href="physical_model/physical_model.html"> Note 3 </a>.
- </p>
+  This note is an attempt at a model to explain the time-dependent behavior seen in Run 67. Specifically the observations
+  we attemp to explain are
+</p>
+<ul>
+  <li>When bias is applied to the neutralized detector, the charge collection efficiency as seen in the 60keV peak from the Am-241 source grows roughly linearly from 100% to well above 100% over a few minutes
+  <li>This CCE growth is seen for hole events (Am-side of detector positively biased) and not for electron events (Am-side negatively biased)
+  <li>The CCE growth rate is greater for larger applied biases, as quantified empirically in <a href="/peak_params/peak_params.html"> Note 1</a> 
+  <li>The CCE growth rate is greater when the overall ionization rate is greater, due to an additional source present, 
+  also quantified in <a href="/peak_params/peak_params.html"> Note 1</a>.  
+</ul>
 <p>
-  We start with the processes that Nick's model assumes are dominant:
+  We assume that the dominant interactions between charge carriers and impurities are those identified in <a href="physical_model/physical_model.html"> Note 3 </a>:
+  electrons trapping on neutral donors, and holes impacting with overcharged donors to release an electron (without changing the donor charge).
 </p>
 <ol>
   <li>\( e^- + D^0 \rightarrow D^- \)</li>
